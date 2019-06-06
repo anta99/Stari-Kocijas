@@ -1,0 +1,167 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+  color: #fff;
+}
+
+p {
+  font-size: 22px;
+}
+
+body {
+  background-color: #18181E;
+  color: #DEC79B;
+}
+
+h1 {
+  font-size: 60px;
+}
+
+h2 {
+  font-size: 40px;
+}
+
+.meni {
+  background-color: #DEC79B;
+  padding: 0px;
+}
+
+.carousel-item {
+  height: 95vh;
+}
+
+.navbar-collapse {
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+
+.nav-link {
+  font-size: 20px;
+  -webkit-transition: .5s;
+  transition: .5s;
+}
+
+.nav-link:hover {
+  color: #18181E !important;
+}
+
+svg {
+  color: #fff;
+}
+
+.dugme2 {
+  background-color: #18181E;
+  color: #DEC79B;
+  padding: 10px;
+  margin-top: 30px;
+  width: 100px;
+}
+
+.slike {
+  padding: 0px;
+  overflow: hidden;
+}
+
+#carouselExampleFade {
+  height: auto;
+}
+
+.linija {
+  border-bottom: 2px solid #DEC79B;
+}
+
+.natpis {
+  position: absolute;
+  top: 30%;
+  color: #DEC79B;
+}
+
+.natpis h1 {
+  font-size: 90px;
+}
+
+.slika {
+  width: 40%;
+  margin: 10px;
+  overflow: hidden;
+  background-color: #18181E;
+}
+
+.slika img {
+  -webkit-transition: .5s;
+  transition: .5s;
+  opacity: 0.5;
+}
+
+.slika:hover img {
+  -webkit-transform: scale(1.15, 1.15);
+          transform: scale(1.15, 1.15);
+  opacity: 1;
+}
+
+footer {
+  background-color: #000;
+  font-size: 18px;
+}
+
+footer i {
+  font-size: 30px;
+}
+
+footer a:hover {
+  color: #DEC79B;
+  text-decoration: none;
+}
+
+.podatci p {
+  font-size: 16px;
+}
+
+/*O nama*/
+.info {
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(24, 24, 30, 0.5)), to(rgba(24, 24, 30, 0.9))), url("../images/objekat.jpg");
+  background-image: linear-gradient(rgba(24, 24, 30, 0.5), rgba(24, 24, 30, 0.9)), url("../images/objekat.jpg");
+  background-size: cover;
+  background-position: center;
+  padding: 80px 0px;
+}
+
+/*Jelovnik*/
+.dugme {
+  background-color: #DEC79B;
+}
+
+.dugme:hover {
+  background-color: #18181E;
+  color: #DEC79B;
+}
+
+.karte {
+  border-color: #DEC79B;
+  color: #18181E;
+}
+
+.zaglavlje {
+  background-color: #18181E;
+  color: #fff;
+}
+
+thead {
+  background-color: #18181E;
+  color: #DEC79B;
+}
+
+@media screen and (max-width: 500px) {
+  .slika {
+    width: 100%;
+    margin: 10px 0px;
+  }
+}
+/*# sourceMappingURL=style.css.map */
