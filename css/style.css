@@ -1,8 +1,10 @@
+@import url("https://fonts.googleapis.com/css?family=Dancing+Script|Source+Serif+Pro&display=swap");
 * {
   margin: 0px;
   padding: 0px;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
+  font-family: 'Source Serif Pro', serif;
 }
 
 a {
@@ -20,11 +22,13 @@ body {
 }
 
 h1 {
-  font-size: 60px;
+  font-size: 70px;
+  font-family: 'Dancing Script', cursive;
 }
 
 h2 {
-  font-size: 40px;
+  font-size: 50px;
+  font-family: 'Dancing Script', cursive;
 }
 
 .meni {
@@ -52,16 +56,15 @@ h2 {
   color: #18181E !important;
 }
 
-svg {
-  color: #fff;
-}
-
-.dugme2 {
+.dugmici {
   background-color: #18181E;
   color: #DEC79B;
-  padding: 10px;
-  margin-top: 30px;
-  width: 100px;
+  border: none;
+}
+
+.dugmici:hover {
+  background-color: #DEC79B;
+  color: #18181E;
 }
 
 .slike {
@@ -78,7 +81,6 @@ svg {
 }
 
 .natpis {
-  position: absolute;
   top: 30%;
   color: #DEC79B;
 }
@@ -92,6 +94,10 @@ svg {
   margin: 10px;
   overflow: hidden;
   background-color: #18181E;
+  /*&:hover img{
+        transform: scale(1.15,1.15);
+        opacity: 1;
+    }*/
 }
 
 .slika img {
@@ -133,6 +139,21 @@ footer a:hover {
   padding: 80px 0px;
 }
 
+.galerija {
+  overflow: hidden;
+}
+
+.galerija img {
+  -webkit-transition: .5s;
+  transition: .5s;
+}
+
+.galerija:hover img {
+  -webkit-transform: scale(1.15, 1.15);
+          transform: scale(1.15, 1.15);
+  opacity: 1;
+}
+
 /*Jelovnik*/
 .dugme {
   background-color: #DEC79B;
@@ -163,5 +184,11 @@ thead {
     width: 100%;
     margin: 10px 0px;
   }
+  /*.natpis{
+        h1{ 
+            font-size:60px;
+        }
+       
+    }*/
 }
 /*# sourceMappingURL=style.css.map */

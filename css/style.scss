@@ -1,29 +1,41 @@
-$boja1:#DEC79B;
-$boja2:#18181E;
+@import url('https://fonts.googleapis.com/css?family=Dancing+Script|Source+Serif+Pro&display=swap');
+$zuta:#DEC79B;
+$crna:#18181E;
+@mixin slikeHover{
+    &:hover img{
+        transform: scale(1.15,1.15);
+        opacity: 1;
+    }
+}
 *{
     margin:0px;
     padding:0px;
     box-sizing: border-box;
+    font-family: 'Source Serif Pro', serif;
 }
 a{
     text-decoration: none;
     color:#fff;
+    
 }
 p{
     font-size: 22px;
+    //font-family: 'Cinzel', serif;
 }
 body{
-    background-color:$boja2;
-    color:$boja1;
+    background-color:$crna;
+    color:$zuta;
 }
 h1{
-    font-size: 60px;
+    font-size: 70px;
+    font-family: 'Dancing Script', cursive;
 }
 h2{
-    font-size:40px;
+    font-size:50px;
+    font-family: 'Dancing Script', cursive;
 }
 .meni{
-    background-color: $boja1;
+    background-color: $zuta;
     padding:0px;
 }
 .carousel-item{
@@ -36,19 +48,18 @@ h2{
     font-size: 20px;
     transition: .5s;
     &:hover{
-        color:$boja2 !important;
+        color:$crna !important;
         
     }
 }
-svg{
-    color:#fff;
-}
-.dugme2{
-    background-color: $boja2;
-    color:$boja1;
-    padding: 10px;
-    margin-top: 30px;
-    width:100px;
+.dugmici{
+    background-color: $crna;
+    color:$zuta;
+    border: none;
+    &:hover{
+        background-color: $zuta;
+        color:$crna;
+    }
 }
 .slike{
     padding:0px;
@@ -58,12 +69,12 @@ svg{
     height: auto;
 }
 .linija{
-    border-bottom: 2px solid $boja1;
+    border-bottom: 2px solid $zuta;
 }
 .natpis{
-    position: absolute;
+    //position: absolute;
     top:30%;
-    color:$boja1;
+    color:$zuta;
     h1{
         font-size:90px;
     }
@@ -72,15 +83,16 @@ svg{
     width:40%;
     margin:10px;
     overflow: hidden;
-    background-color:$boja2;
+    background-color:$crna;
     img{
         transition: .5s;
         opacity: 0.5;
     }
-    &:hover img{
+    /*&:hover img{
         transform: scale(1.15,1.15);
         opacity: 1;
-    }
+    }*/
+    @include slikeHover;
 }
 footer{
     background-color:#000;
@@ -89,7 +101,7 @@ footer{
         font-size:30px;
     }
     a:hover{
-    color:$boja1;
+    color:$zuta;
     text-decoration: none;
     }
 }
@@ -103,36 +115,50 @@ footer{
 /*O nama*/
 .info{
     background: {
-        image:linear-gradient(rgba($boja2 ,0.5),rgba($boja2,0.9)),url("../images/objekat.jpg");
+        image:linear-gradient(rgba($crna ,0.5),rgba($crna,0.9)),url("../images/objekat.jpg");
         size:cover;
         position: center;
     } 
     padding:80px 0px;
 }
+.galerija{
+    overflow: hidden; 
+    img{
+        transition: .5s;
+    }
+    @include slikeHover;
+ 
+}
 /*Jelovnik*/
 .dugme{
-    background-color: $boja1;
+    background-color: $zuta;
     &:hover{
-        background-color: $boja2;
-        color:$boja1;
+        background-color: $crna;
+        color:$zuta;
     }
 }
 .karte{
-    border-color:$boja1; 
-    color:$boja2;
+    border-color:$zuta; 
+    color:$crna;
 }
 .zaglavlje{
-    background-color: $boja2;
+    background-color: $crna;
     color:#fff;
 }
 thead{
-    background-color: $boja2;
-    color:$boja1;
+    background-color: $crna;
+    color:$zuta;
 }
 @media screen and (max-width:500px){
     .slika{
         width:100%;
         margin:10px 0px;
     }
+    /*.natpis{
+        h1{ 
+            font-size:60px;
+        }
+       
+    }*/
 }
 
