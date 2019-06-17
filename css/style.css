@@ -1,15 +1,26 @@
 @import url("https://fonts.googleapis.com/css?family=Dancing+Script|Source+Serif+Pro&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Old+Standard+TT&display=swap");
+button:focus {
+  background: transparent;
+}
+
 * {
   margin: 0px;
   padding: 0px;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
-  font-family: 'Source Serif Pro', serif;
+  font-family: 'Old Standard TT', serif;
+  outline: none !important;
 }
 
 a {
   text-decoration: none;
   color: #fff;
+}
+
+svg {
+  width: 100%;
+  height: auto;
 }
 
 p {
@@ -31,23 +42,32 @@ h2 {
   font-family: 'Dancing Script', cursive;
 }
 
+.menifluid {
+  -webkit-box-shadow: 0px 3px 15px #DEC79B;
+          box-shadow: 0px 3px 15px #DEC79B;
+}
+
 .meni {
-  background-color: #DEC79B;
   padding: 0px;
 }
 
-.carousel-item {
-  height: 95vh;
+.meni a {
+  color: #fff !important;
 }
 
-.navbar-collapse {
-  -webkit-box-pack: end;
-      -ms-flex-pack: end;
-          justify-content: flex-end;
+.meni a:hover {
+  color: #DEC79B !important;
+}
+
+/*.navbar-collapse{
+    justify-content: flex-end;
+}*/
+.navbar-toggler {
+  border: none;
 }
 
 .nav-link {
-  font-size: 20px;
+  font-size: 22px;
   -webkit-transition: .5s;
   transition: .5s;
 }
@@ -72,10 +92,6 @@ h2 {
   overflow: hidden;
 }
 
-#carouselExampleFade {
-  height: auto;
-}
-
 .linija {
   border-bottom: 2px solid #DEC79B;
 }
@@ -83,6 +99,12 @@ h2 {
 .natpis {
   top: 30%;
   color: #DEC79B;
+}
+
+@media screen and (min-width: 750px) and (max-width: 1050px) {
+  .natpis {
+    top: 8%;
+  }
 }
 
 .natpis h1 {
@@ -94,10 +116,6 @@ h2 {
   margin: 10px;
   overflow: hidden;
   background-color: #18181E;
-  /*&:hover img{
-        transform: scale(1.15,1.15);
-        opacity: 1;
-    }*/
 }
 
 .slika img {
@@ -123,10 +141,13 @@ footer i {
 
 footer a:hover {
   color: #DEC79B;
-  text-decoration: none;
 }
 
 .podatci p {
+  font-size: 16px;
+}
+
+.podatci i {
   font-size: 16px;
 }
 
@@ -146,6 +167,12 @@ footer a:hover {
 .galerija img {
   -webkit-transition: .5s;
   transition: .5s;
+}
+
+.galerija img {
+  -webkit-transition: .5s;
+  transition: .5s;
+  opacity: 0.5;
 }
 
 .galerija:hover img {
@@ -179,16 +206,26 @@ thead {
   color: #DEC79B;
 }
 
+/*Kontakt*/
+.kontakt {
+  font-size: 25px;
+}
+
+#mapa {
+  width: 100%;
+  min-height: 600px;
+}
+
+/*Boja za checkbox*/
+[type="checkbox"].filled-in:checked + span:not(.lever)::after {
+  background-color: #DEC79B;
+  border-color: #DEC79B;
+}
+
 @media screen and (max-width: 500px) {
   .slika {
     width: 100%;
     margin: 10px 0px;
   }
-  /*.natpis{
-        h1{ 
-            font-size:60px;
-        }
-       
-    }*/
 }
 /*# sourceMappingURL=style.css.map */
