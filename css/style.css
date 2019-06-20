@@ -1,6 +1,6 @@
 @import url("https://fonts.googleapis.com/css?family=Dancing+Script|Source+Serif+Pro&display=swap");
 @import url("https://fonts.googleapis.com/css?family=Old+Standard+TT&display=swap");
-button:focus {
+.resdugme:focus {
   background: transparent;
 }
 
@@ -48,6 +48,7 @@ h2 {
 }
 
 .meni {
+  background-color: #18181E;
   padding: 0px;
 }
 
@@ -216,10 +217,92 @@ thead {
   min-height: 600px;
 }
 
-/*Boja za checkbox*/
-[type="checkbox"].filled-in:checked + span:not(.lever)::after {
-  background-color: #DEC79B;
+/*Boja za formu*/
+.forma input {
+  color: #DEC79B !important;
+}
+
+.formaTekst {
+  font-size: 20px !important;
+  color: #DEC79B !important;
+}
+
+.modal {
+  height: auto;
+}
+
+#test5 {
+  border: none;
+}
+
+input[type="range"] + .thumb.active {
+  top: 0px !important;
+  background: #DEC79B;
+  color: #DEC79B;
+}
+
+input[type="range"] + .thumb.active .value {
+  color: #18181E;
+  font-size: 15px;
+  text-align: center;
+}
+
+.prefix {
+  left: 0;
+}
+
+.input-field .prefix.active {
+  color: #DEC79B !important;
   border-color: #DEC79B;
+}
+
+.input-field .prefix.active:focus {
+  border-color: #DEC79B !important;
+}
+
+.input-field input[type=text]:focus {
+  border-bottom: 1px solid #DEC79B !important;
+  -webkit-box-shadow: 0 1px 0 0 #DEC79B !important;
+          box-shadow: 0 1px 0 0 #DEC79B !important;
+}
+
+.icon_prefix:focus .active {
+  border-color: #DEC79B;
+}
+
+.datepicker-done, .datepicker-cancel, .datepicker-day-button, .datepicker-date-display {
+  color: #18181E;
+}
+
+.datepicker-table td.is-selected {
+  background-color: #DEC79B;
+}
+
+.datepicker-date-display {
+  background-color: #DEC79B;
+}
+
+.rezervisi {
+  background-color: #DEC79B;
+  padding: 10px;
+}
+
+.rezervisi:hover {
+  background-color: #DEC79B;
+}
+
+/*O Autoru*/
+.oAutoru a {
+  color: #DEC79B;
+}
+
+.oAutoru i {
+  font-size: 35px;
+  color: #DEC79B;
+}
+
+.follow {
+  font-size: 30px;
 }
 
 @media screen and (max-width: 500px) {

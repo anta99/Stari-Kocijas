@@ -12,7 +12,7 @@ $crna:#18181E;
         opacity: 1;
     }
 }
-button:focus{
+.resdugme:focus{
     background: transparent;
 }
 *{
@@ -50,7 +50,7 @@ h2{
     box-shadow: 0px 3px 15px $zuta;
 }
 .meni{
-    //background-color: $crna;
+    background-color: $crna;
     //background-color: rgba(24,24,30,0.5);
     //background-color:#eae1d0 ;
     padding:0px;
@@ -173,10 +173,76 @@ thead{
     width:100%;
     min-height:600px;
 }
-/*Boja za checkbox*/
-[type="checkbox"].filled-in:checked + span:not(.lever)::after{
-    background-color:$zuta;
+/*Boja za formu*/
+.forma input{
+    color: $zuta !important;
+}
+.formaTekst{
+    font-size:20px !important;
+    color:$zuta !important;
+}
+.modal{
+    height:auto;
+}
+#test5{
+    border: none;
+}
+input[type="range"] + .thumb.active{
+    top:0px !important;
+    background: $zuta;
+    color:$zuta;
+    & .value{
+        color:$crna;
+        font-size:15px;
+        text-align: center;
+    }
+}
+.prefix{
+    left:0;
+}
+.input-field .prefix.active{
+    color:$zuta !important;
     border-color:$zuta;
+    &:focus{
+        border-color:$zuta !important;
+    } 
+}
+.input-field input[type=text]:focus {
+    border-bottom: 1px solid $zuta !important;
+    box-shadow: 0 1px 0 0 $zuta !important;
+  }
+.icon_prefix:focus .active{
+    border-color:$zuta; 
+}
+.datepicker-done,.datepicker-cancel,.datepicker-day-button,.datepicker-date-display{
+    color:$crna;
+}
+.datepicker-table td.is-selected{
+    background-color: $zuta;
+}
+.datepicker-date-display{
+    background-color: $zuta;
+}
+.rezervisi{
+    background-color:$zuta;
+    padding:10px;
+    &:hover{
+        background-color: $zuta;
+    }
+}
+
+/*O Autoru*/
+.oAutoru {
+    a{
+        color:$zuta;
+    }
+    i{
+        font-size:35px;
+        color:$zuta;
+    }
+}
+.follow{
+    font-size:30px;
 }
 @media screen and (max-width:500px){
     .slika{
