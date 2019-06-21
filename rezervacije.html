@@ -68,35 +68,34 @@
                 </div>
                 <div class="col-12  col-md-6 kontakt mt-4 text-center text-wrap text-break">
                   <h2>Rezervacije</h2>
-                  <form class="forma">
-                    
+                  <form action="" method="GET" id="forma">
                       <div class="input-field">
                         <i class="material-icons prefix">account_circle</i>
-                        <input id="icon_prefix" type="text" placeholder="Ime i prezime">
+                        <input id="icon_prefix" type="text" name="ime_i_prezime" placeholder="Ime i prezime">
                       </div>
                       <div class="input-field">
                         <i class="material-icons prefix">phone</i>
-                        <input id="icon_telephone" type="text" placeholder="Kontakt telefon">
+                        <input id="icon_telephone" type="text" name="telefon" placeholder="Kontakt telefon">
                       </div>   
                       <div class="input-field w-100">
                           <i class="material-icons prefix">date_range</i>
-                          <input type="text" class="datepicker" placeholder="Datum">
+                          <input type="text" name="datum" class="datepicker" placeholder="Datum">
                         </div>
                         <div class="input-field w-100">
                             <span>Broj osoba:</span>
-                            <input type="range" id="test5" min="0" max="10" value="0" />
+                            <input type="range" id="slajder" min="0" max="10" value="0" name="broj_osoba" />
                           </div>  
                         <div class="input-field w-100">
                             <label class="position-static">
-                                <input name="group1" type="radio" />
+                                <input name="zona" type="radio" value="pušačka zona"/>
                                 <span class="formaTekst">Pušačka zona</span>
                               </label>
                               <label class="position-static ml-sm-5">
-                                  <input name="group1" type="radio" />
+                                  <input name="zona" type="radio" value="nepušačka zona"/>
                                   <span class="formaTekst">Nepušačka zona</span>
                                 </label>
                           </div>   
-                          <a class="waves-effect waves-light btn rezervisi text-upper grey-text text-darken-4 mt-3">Rezervišite</a>
+                          <button class="waves-effect waves-light btn rezervisi text-upper grey-text text-darken-4 mt-3"type="submit">Rezervišite</button>
                   </form>
               </div>
             </div>

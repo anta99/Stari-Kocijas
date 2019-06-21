@@ -104,7 +104,7 @@ h2 {
 
 @media screen and (min-width: 750px) and (max-width: 1050px) {
   .natpis {
-    top: 8%;
+    top: 5%;
   }
 }
 
@@ -218,7 +218,7 @@ thead {
 }
 
 /*Boja za formu*/
-.forma input {
+#forma input {
   color: #DEC79B !important;
 }
 
@@ -231,20 +231,33 @@ thead {
   height: auto;
 }
 
-#test5 {
+#slajder {
   border: none;
 }
 
-input[type="range"] + .thumb.active {
+#slajder + .thumb.active {
   top: 0px !important;
   background: #DEC79B;
   color: #DEC79B;
 }
 
-input[type="range"] + .thumb.active .value {
+#slajder + .thumb.active .value {
   color: #18181E;
   font-size: 15px;
   text-align: center;
+}
+
+#slajder::-webkit-slider-thumb {
+  background: #DEC79B;
+}
+
+#slajder::-moz-range-thumb {
+  background: #DEC79B;
+}
+
+input[type="radio"]:checked + span:after {
+  background-color: #DEC79B;
+  border-color: #DEC79B;
 }
 
 .prefix {

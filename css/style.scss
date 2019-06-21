@@ -97,7 +97,7 @@ h2{
     top:30%;
     color:$zuta;
     @media screen and (min-width:750px) and (max-width:1050px){
-        top:8%;     
+        top:5%;     
     }
     h1{
         font-size:90px;
@@ -174,7 +174,7 @@ thead{
     min-height:600px;
 }
 /*Boja za formu*/
-.forma input{
+#forma input{
     color: $zuta !important;
 }
 .formaTekst{
@@ -184,10 +184,11 @@ thead{
 .modal{
     height:auto;
 }
-#test5{
+#slajder{
     border: none;
 }
-input[type="range"] + .thumb.active{
+
+#slajder + .thumb.active{
     top:0px !important;
     background: $zuta;
     color:$zuta;
@@ -196,6 +197,16 @@ input[type="range"] + .thumb.active{
         font-size:15px;
         text-align: center;
     }
+}
+#slajder::-webkit-slider-thumb{
+    background:$zuta;
+}
+#slajder::-moz-range-thumb{
+    background:$zuta;
+}
+input[type="radio"]:checked + span:after{
+    background-color: $zuta;
+    border-color:$zuta; 
 }
 .prefix{
     left:0;
