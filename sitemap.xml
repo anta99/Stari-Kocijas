@@ -1,0 +1,33 @@
+<?xml version="1.0" ?>
+<urlset>
+    <url>
+        <loc>https://starikocijas.netlify.com/index.html</loc>
+        <lastmod>2019-6-22</lastmod>
+        <changefreq>daily</changefreq>
+        <priority>1</priority>
+    </url>
+    <url>
+        <loc>https://starikocijas.netlify.com/onama.html</loc>
+        <lastmod>2019-6-22</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.7</priority>
+    </url>
+    <url>
+        <loc>https://starikocijas.netlify.com/meni.html</loc>
+        <lastmod>2019-6-22</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.8</priority>
+    </url>
+    <url>
+        <loc>https://starikocijas.netlify.com/rezervacije.html</loc>
+        <lastmod>2019-6-22</lastmod>
+        <changefreq>yearly</changefreq>
+        <priority>0.6</priority>
+    </url>
+    <url>
+        <loc>https://starikocijas.netlify.com/kontakt.html</loc>
+        <lastmod>2019-6-22</lastmod>
+        <changefreq>yearly</changefreq>
+        <priority>0.5</priority>
+    </url>
+</urlset>
