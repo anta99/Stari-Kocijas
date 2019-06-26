@@ -1,11 +1,14 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="sr">
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <meta name="description" content="Pogledajte gde se nalazi restoran Stari Kočijas,kako da nas kontaktirate ili rezervišite svoje mesto na vreme." />
+    <meta name="keywords" content="restoran,Meljak,rezervacije,Kočijas,Stari,kontakt" /> 
     <title>Stari Kočijas</title>
     <link rel="shortcut icon" href="images/logo2.ico" />
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link href="css/materialize.css" type="text/css" rel="stylesheet" />
     <!--Bootstrap CSS-->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" />
@@ -19,14 +22,14 @@
       <div class="row">
         <div class="col-12">
             <nav class="navbar navbar-expand-lg navbar-dark meni">
-                <a class="navbar-brand" href="index.html"><img src="images/logo.png" class="logo" alt="Logo" /></a>
-                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <a class="navbar-brand" href="index.html"><img src="images/logo3.png" class="logo" alt="Logo" /></a>
+                <button class="navbar-toggler resdugme" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                   <span class="navbar-toggler-icon"></span>
                 </button>
                 <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
                   <ul class="navbar-nav text-center">
                     <li class="nav-item ">
-                      <a class="nav-link font-weight-bold" href="index.html">Pocetna <span class="sr-only">(current)</span></a>
+                      <a class="nav-link font-weight-bold" href="index.html">Početna <span class="sr-only">(current)</span></a>
                     </li>
                     <li class="nav-item">
                       <a class="nav-link font-weight-bold" href="oNama.html">O nama</a>
@@ -35,10 +38,10 @@
                       <a class="nav-link font-weight-bold" href="meni.html">Jelovnik</a>
                     </li>
                     <li class="nav-item active">
-                        <a class="nav-link font-weight-bold" href="rezervacije.html">Rezervacije</a>
+                        <a class="nav-link font-weight-bold" href="rezervacije.html">Kontakt</a>
                       </li>
                     <li class="nav-item">
-                        <a class="nav-link font-weight-bold" href="kontakt.html">Kontakt</a>
+                        <a class="nav-link font-weight-bold" href="kontakt.html">O autoru</a>
                       </li>
                   </ul>
                 </div>
@@ -59,20 +62,43 @@
                 <div class="col-12  col-md-6 kontakt mt-5 text-center text-wrap text-break">
                     <h2>Imate pitanja?</h2>
                       <ul class="list-unstyled">
-                          <li class="mt-4">Adresa:<br/>Marsala Tita 64</li>
-                          <li class="mt-4">Radno vreme:<br/>22:00-04:00</li>
+                          <li class="mt-4">Adresa:<br/>Maršala Tita 64</li>
+                          <li class="mt-4">Radno vreme:<br/>12:00-04:00</li>
                           <li class="mt-4">Broj telefona:<br/>011/8341-567</li>
                           <li class="mt-4">Email:<br/>starikocijas@gmail.com</li>
                       </ul>
                 </div>
                 <div class="col-12  col-md-6 kontakt mt-4 text-center text-wrap text-break">
                   <h2>Rezervacije</h2>
-                  <p>
-                    <label>
-                      <input type="checkbox" class="filled-in orange darken-2" checked="checked" />
-                      <span>Filled in</span>
-                    </label>
-                  </p>
+                  <form action="" method="GET" id="forma">
+                      <div class="input-field">
+                        <i class="material-icons prefix">account_circle</i>
+                        <input id="icon_prefix" type="text" name="ime_i_prezime" placeholder="Ime i prezime">
+                      </div>
+                      <div class="input-field">
+                        <i class="material-icons prefix">phone</i>
+                        <input id="icon_telephone" type="text" name="telefon" placeholder="Kontakt telefon">
+                      </div>   
+                      <div class="input-field w-100">
+                          <i class="material-icons prefix">date_range</i>
+                          <input type="text" name="datum" class="datepicker" placeholder="Datum">
+                        </div>
+                        <div class="input-field w-100">
+                            <span>Broj osoba:</span>
+                            <input type="range" id="slajder" min="0" max="10" value="0" name="broj_osoba" />
+                          </div>  
+                        <div class="input-field w-100">
+                            <label class="position-static">
+                                <input name="zona" type="radio" value="pušačka zona"/>
+                                <span class="formaTekst">Pušačka zona</span>
+                              </label>
+                              <label class="position-static ml-sm-5">
+                                  <input name="zona" type="radio" value="nepušačka zona"/>
+                                  <span class="formaTekst">Nepušačka zona</span>
+                                </label>
+                          </div>   
+                          <button class="waves-effect waves-light btn rezervisi text-upper grey-text text-darken-4 mt-3"type="submit">Rezervišite</button>
+                  </form>
               </div>
             </div>
             <div class="row mt-5 p-2">
@@ -88,18 +114,20 @@
       <div class="row">
           <div class="col-lg-6 col-12 pr-3 d-flex justify-content-center justify-content-lg-start">
               <ul class="list-inline text-center">
-                  <li class="list-inline-item pr-3"><a href="https://www.facebook.com/" target="_blank"><i class='fab fa-facebook-f'></i></a></li>
-                  <li class="list-inline-item pr-3"><a href="https://www.instagram.com/" target="_blank"><i class='fab fa-instagram'></i></a></li>
-                  <li class="list-inline-item pr-3"><a href="https://www.tripadvisor.com/" target="_blank"><i class='fab fa-tripadvisor'></i></a></li>
+                  <li class="list-inline-item pr-2"><a href="https://www.facebook.com/" target="_blank"><i class='fab fa-facebook-f'></i></a></li>
+                  <li class="list-inline-item pr-2"><a href="https://www.instagram.com/" target="_blank"><i class='fab fa-instagram'></i></a></li>
+                  <li class="list-inline-item pr-2"><a href="https://www.tripadvisor.com/" target="_blank"><i class='fab fa-tripadvisor'></i></a></li>
+                  <li class="list-inline-item pr-2"><a href="css/style.scss" target="_blank"><i class="fab fa-sass"></i></a></li>
+                  <li class="list-inline-item pr-2"><a href="js/script.js" target="_blank"><i class='fab fa-js-square'></i></a></li>
                 </ul>
           </div>
           <div class="col-lg-6 col-12 d-flex justify-content-center justify-content-lg-end">
               <ul class="list-inline text-center">
-                  <li class="list-inline-item"><a href="index.html">Pocetna</a></li>
+                  <li class="list-inline-item"><a href="index.html">Početna</a></li>
                   <li class="list-inline-item"><a href="oNama.html">O nama</a></li>
                   <li class="list-inline-item"><a href="meni.html">Jelovnik</a></li>
-                  <li class="list-inline-item"><a href="rezervacije.html">Rezervacije</a></li>
-                  <li class="list-inline-item"><a href="kontakt.html">Kontakt</a></li>
+                  <li class="list-inline-item"><a href="rezervacije.html">Kontakt</a></li>
+                  <li class="list-inline-item"><a href="kontakt.html">O autoru</a></li>
                 </ul>
           </div>
           
@@ -116,5 +144,7 @@
   <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+  <script src="js/materialize.min.js"></script>
+  <script src="js/script.js"></script>
 </body>
 </html>
